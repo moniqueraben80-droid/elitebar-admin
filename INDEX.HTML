@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Elite Bar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:#fff;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.9);
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#d4af37;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+font-size:17px;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:70px;
+color:#d4af37;
+}
+
+.hero p{
+font-size:22px;
+margin:20px 0;
+}
+
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:#d4af37;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+color:#d4af37;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1d1d1d;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border:2px solid #d4af37;
+}
+
+input,
+textarea{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:20px;
+background:#d4af37;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+ELITE BAR
+
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#menu">Menu</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#reservation">Reservation</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Elite Bar</h1>
+
+<p>Luxury Drinks • Premium Dining • Live Music</p>
+
+<a href="#reservation" class="btn">
+
+Reserve A Table
+
+</a>
+
+</div>
+
+</section>
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About Elite Bar</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Our Story</h3>
+
+<p>
+Elite Bar is one of the finest luxury lounges, offering premium drinks, delicious meals, and unforgettable nightlife in a stylish atmosphere.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Our Mission</h3>
+
+<p>
+Our mission is to provide exceptional hospitality, quality food, signature cocktails, and outstanding customer service.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Opening Hours</h3>
+
+<p>
+
+Monday - Thursday<br>
+
+10:00 AM - 11:00 PM
+
+<br><br>
+
+Friday - Sunday<br>
+
+10:00 AM - 2:00 AM
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- MENU -->
+
+<section id="menu">
+
+<h2 class="section-title">Our Menu</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🍔 Classic Burger</h3>
+
+<p>Grilled beef burger served with crispy fries.</p>
+
+<h2 style="color:#d4af37;">₦12,500</h2>
+
+</div>
+
+<div class="card">
+
+<h3>🥩 Premium Steak</h3>
+
+<p>Served with fresh vegetables and special sauce.</p>
+
+<h2 style="color:#d4af37;">₦22,000</h2>
+
+</div>
+
+<div class="card">
+
+<h3>🍕 Pepperoni Pizza</h3>
+
+<p>Fresh mozzarella with premium pepperoni.</p>
+
+<h2 style="color:#d4af37;">₦15,000</h2>
+
+</div>
+
+<div class="card">
+
+<h3>🍝 Creamy Pasta</h3>
+
+<p>Italian pasta with creamy mushroom sauce.</p>
+
+<h2 style="color:#d4af37;">₦10,500</h2>
+
+</div>
+
+<div class="card">
+
+<h3>🍹 Mojito</h3>
+
+<p>Fresh mint, lime and sparkling soda.</p>
+
+<h2 style="color:#d4af37;">₦8,000</h2>
+
+</div>
+
+<div class="card">
+
+<h3>🍸 Martini</h3>
+
+<p>Premium cocktail prepared by our bartender.</p>
+
+<h2 style="color:#d4af37;">₦9,500</h2>
+
+</div>
+
+<div class="card">
+
+<h3>🍷 Red Wine</h3>
+
+<p>Premium imported red wine.</p>
+
+<h2 style="color:#d4af37;">₦18,000</h2>
+
+</div>
+
+<div class="card">
+
+<h3>🥂 Champagne</h3>
+
+<p>Luxury champagne for special occasions.</p>
+
+<h2 style="color:#d4af37;">₦35,000</h2>
+
+</div>
+
+</div>
+
+</section>
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80" width="100%" style="border-radius:10px;">
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" width="100%" style="border-radius:10px;">
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" width="100%" style="border-radius:10px;">
+
+</div>
+
+</div>
+
+</section>
+<!-- RESERVATION -->
+
+<section id="reservation">
+
+<h2 class="section-title">Reserve a Table</h2>
+
+<form id="reservationForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="date" id="date" required>
+
+<input type="time" id="time" required>
+
+<input type="number" id="guests" placeholder="Number of Guests" required>
+
+<textarea id="message" placeholder="Special Request (Optional)"></textarea>
+
+<button type="submit">
+
+Reserve Now
+
+</button>
+
+</form>
+
+<p id="successMessage" style="text-align:center;color:#d4af37;margin-top:20px;"></p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📍 Address</h3>
+
+<p>
+
+12 Admiralty Way,<br>
+
+Lekki Phase 1,<br>
+
+Lagos, Nigeria
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📞 Phone</h3>
+
+<p>
+
++234 812 345 6789
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>✉ Email</h3>
+
+<p>
+
+info@elitebar.com
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="color:#d4af37;">
+
+Elite Bar
+
+</h2>
+
+<p>
+
+Luxury Drinks • Premium Dining • Live Music
+
+</p>
+
+<p>
+
+© 2026 Elite Bar. All Rights Reserved.
+
+</p>
+
+</footer>
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+
+import {
+getFirestore,
+collection,
+addDoc
+}
+from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+const firebaseConfig = {
+
+apiKey:"AIzaSyCEqN-t_yyNHp34V83_OdMVEcyVz1UW3TI",
+
+authDomain:"elite-bar-decba.firebaseapp.com",
+
+projectId:"elite-bar-decba",
+
+storageBucket:"elite-bar-decba.firebasestorage.app",
+
+messagingSenderId:"255996688840",
+
+appId:"1:255996688840:web:fe55d92bc014c4fe6ea8fd"
+
+};
+
+const app=initializeApp(firebaseConfig);
+
+const db=getFirestore(app);
+
+const form=document.getElementById("reservationForm");
+
+const success=document.getElementById("successMessage");
+
+form.addEventListener("submit",async(e)=>{
+
+e.preventDefault();
+
+try{
+
+await addDoc(collection(db,"reservations"),{
+
+name:document.getElementById("name").value,
+
+email:document.getElementById("email").value,
+
+phone:document.getElementById("phone").value,
+
+date:document.getElementById("date").value,
+
+time:document.getElementById("time").value,
+
+guests:document.getElementById("guests").value,
+
+request:document.getElementById("message").value,
+
+status:"Pending",
+
+createdAt:new Date()
+
+});
+
+success.innerHTML="✅ Reservation submitted successfully! We will contact you shortly.";
+
+form.reset();
+
+}catch(error){
+
+success.innerHTML="❌ Error: "+error.message;
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>
